@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="head">Bubble Sort visualiser</section>
+    <div class="range">
+      <div class="sliderValue">
+        <span>100</span>
+      </div>
+      <div class="field">
+        <div class="value left">0</div>
+        <input
+          type="range"
+          min="10"
+          max="200"
+          value="10"
+          steps="1"
+          id="range-input"
+        />
+        <div class="value right">200</div>
+      </div>
+    </div>
+
+    <section class="data-container"></section>
+    <div id="array"></div>
+    <div class="button-container">
+      <!-- generate new array button -->
+      <button class="btn1" onclick="generate()" id="Button1">
+        Generate new array
+      </button>
+
+      <!-- Bubble sort button -->
+      <button class="btn2" onclick="BubbleSort(),disable()" id="Button2">
+        Bubble sort
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
